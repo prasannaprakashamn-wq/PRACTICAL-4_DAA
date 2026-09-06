@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+long long factorialIterative(int n)
+{
+    long long fact = 1;
+
+    for (int i = 1; i <= n; i++)
+    {
+        fact = fact * i;
+    }
+
+    return fact;
+}
+
+int main()
+{
+    int n;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    cout << "Factorial using Iterative Method = "
+         << factorialIterative(n);
+    cout << "\nTime Complexity: O(n)";
+
+    return 0;
+}
